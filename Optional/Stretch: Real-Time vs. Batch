@@ -1,0 +1,11 @@
+
+Real-Time Ingestion:
+
+Implement a streaming data pipeline (e.g., using Kafka or Azure Event Hub) to capture near-instant updates.
+Use change data capture (CDC) to monitor source systems and push changes to the central repository with minimal delay.
+BI tool can be set to refresh frequently or use direct live connections.
+Batch Processing:
+
+Schedule batch jobs (daily, hourly, etc.) using tools like Apache Airflow or Azure Data Factory.
+Batch jobs perform bulk data transfers and transformations during off-peak hours.
+Ideal for large datasets where real-time processing is not critical.
