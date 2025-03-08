@@ -1,0 +1,18 @@
+Role-Based Access Control (RBAC):
+
+Define roles (e.g., Data Analyst, Data Engineer, Administrator).
+Implement database-level permissions ensuring only authorized roles can access sensitive tables.
+Use views to mask underlying sensitive data where necessary.
+Data Masking & Encryption:
+
+Data Masking: 
+
+Apply data masking for sensitive fields (e.g., patient contact details, payroll amounts) especially when the data is used in non-secure environments.
+Encryption:
+
+At Rest: 
+
+Ensure the data warehouse supports encryption (e.g., Transparent Data Encryption in SQL-based systems).
+In Transit: 
+
+Use SSL/TLS for data transmission between source systems, the ETL pipeline, and the BI tool.
