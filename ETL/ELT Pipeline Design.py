@@ -55,7 +55,7 @@ def run_etl_pipeline():
 if __name__ == "__main__":
     run_etl_pipeline()
 
-Key Points for Incremental Updates:
+##Key Points for Incremental Updates:
 
-Use timestamps or change flags to detect new or updated records.
-Use an “upsert” mechanism to update existing records or insert new ones.
+##Use timestamps or change flags to detect new or updated records.
+##Use an “upsert” mechanism to update existing records or insert new ones.
