@@ -1,5 +1,6 @@
 # Data-Engineering-Assessment
 Overview:
+
 This project designs and implements a consolidated data platform that ingests information from multiple source systems—such as an EMR system (EMR_A) and a payroll provider (Payroll_B)—into a central data repository. The transformed and cleansed data is then surfaced to a BI tool (Tableau) for reporting and analytics.
 
 Assumptions & Approach:
