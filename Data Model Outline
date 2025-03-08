@@ -1,0 +1,32 @@
+Proposed Star Schema:
+
+Fact Tables
+FactPatientVisits
+
+Columns: VisitID (PK), PatientID (FK), ProviderID (FK), VisitDate, BillingAmount, DiagnosisCode, ...
+Metrics: Total visits, billing totals per period
+FactPayroll
+
+Columns: PayrollID (PK), EmployeeID (FK), DepartmentID (FK), PayrollDate, GrossPay, NetPay, ...
+Metrics: Total payroll cost per department, average salary, etc.
+Dimension Tables
+DimPatient
+
+Columns: PatientID (PK), FirstName, LastName, DOB, Gender, Address, ContactInfo, etc.
+DimProvider
+
+Columns: ProviderID (PK), ProviderName, Specialty, ContactInfo, etc.
+DimDepartment
+
+Columns: DepartmentID (PK), DepartmentName, Manager, Location, etc.
+DimTime
+
+Columns: Date (PK), Day, Month, Quarter, Year, etc.
+Relationships:
+
+FactPatientVisits.PatientID → DimPatient.PatientID
+FactPatientVisits.ProviderID → DimProvider.ProviderID
+FactPatientVisits.VisitDate → DimTime.Date
+FactPayroll.EmployeeID → Employee dimension (if needed)
+FactPayroll.DepartmentID → DimDepartment.DepartmentID
+FactPayroll.PayrollDate → DimTime.Date
