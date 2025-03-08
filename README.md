@@ -21,13 +21,18 @@ BI Tool Integration:
 
 Tableau connects either via live queries (for smaller, interactive datasets) or through scheduled extracts (for larger volumes).
 Real-Time vs. Batch:
+
 While the core pipeline is built for scheduled (batch) loads, the design supports streaming ingestion for near-instant updates where necessary using event-streaming platforms like Kafka or Azure Event Hub.
 How to Run/Interpret the Work:
 
 Architecture & Data Model: 
 
-Review the diagram and data model outline in this documentation for an overview of the data flow and table relationships.
-ETL Pipeline: Refer to the pseudocode provided to understand the pipeline’s modular extraction, transformation, and loading stages.
-Security & Governance: See the guidelines on RBAC, data masking, and encryption for compliance and data protection.
-Queries & Reporting: Example SQL queries are provided for generating key metrics; use these as a starting point in your BI tool.
-Real-Time vs. Batch: The optional section explains how the design can be extended to support real-time ingestion.
+1. Review the diagram and data model outline in this documentation for an overview of the data flow and table relationships.
+
+2. **ETL Pipeline:** Refer to the pseudocode provided to understand the pipeline’s modular extraction, transformation, and loading stages.
+
+3. **Security & Governance:** See the guidelines on RBAC, data masking, and encryption for compliance and data protection.
+
+4. **Queries & Reporting:** Example SQL queries are provided for generating key metrics; use these as a starting point in your BI tool.
+
+5. **Real-Time vs. Batch:** The optional section explains how the design can be extended to support real-time ingestion.
